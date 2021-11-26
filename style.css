@@ -1,0 +1,81 @@
+.slider{
+  position: absolute;
+  cursor: pointer;
+  border: 1.5px solid #adb0ff;
+  border-radius:10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  font-weight: bold;
+  border-radius:6px;
+  height: 24px;
+  width: 80px;
+  left:3px;
+  bottom: 1px;
+  top: 4px;
+  background-color: #d6d8ff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+#check:checked + .slider:before {
+  -webkit-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  transform: translateX(150px);
+}
+.text {
+  color: black;
+}
+.text:after {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  content: "Auspendler";
+  font-size:14px;
+}
+.text:before {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  content: "Einpendler";
+  font-size:14px;
+}
+#check + .slider + .text:after {
+  font-weight:normal;
+}
+#check + .slider + .text:before {
+  font-weight:bold;
+}
+#check:checked + .slider + .text:after {
+  font-weight:bold;
+}
+#check:checked + .slider + .text:before {
+  font-weight:normal;
+}
+.auswahl_buttons{
+  position:relative;
+  right:0px;
+  top:10px;
+  width:240px;
+  height:36px;
+  
+}
+/* BUTTONS */
+button{
+  background-color: white;
+  border: 1px solid #D6D8FF;
+  border-radius: 12px;
+}
+button:hover{
+  background: #D6D8FF;
+}
+button:focus{
+  background: #D6D8FF;
+};
